@@ -1,0 +1,27 @@
+{
+    "compilerOptions": {
+        "noEmitOnError": true,
+        "module": "commonjs",
+        "target": "es6",
+        "lib": ["es6", "dom"],
+        "experimentalDecorators": true,
+        "emitDecoratorMetadata": true
+    },
+    "files": [
+//        "01_types.ts",
+//        "02_types.ts",
+//        "03_any.ts",
+//        "04_union.ts",
+//        "05_alias.ts",
+//        "06_interface.ts",
+//        "07_class.ts",
+//        "08_class.ts",
+//        "09_decorator.ts",
+//        "10_module_1.ts",
+//        "10_module_2.ts",
+//        "11_module_1.ts",
+//        "11_module_2.ts",
+        "12_optional_default.ts",
+        "13_array_fn.ts"
+    ]
+}

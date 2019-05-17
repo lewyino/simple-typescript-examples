@@ -1,0 +1,28 @@
+{
+    "name": "typescript",
+    "version": "1.0.0",
+    "description": "",
+    "dependencies": {
+        "typescript": "^3.3.3333"
+    },
+    "devDependencies": {},
+    "scripts": {
+        "tsc": "./node_modules/.bin/tsc",
+        "tsc01": "./node_modules/.bin/tsc --noEmitOnError 01_types",
+        "tsc02": "./node_modules/.bin/tsc --noEmitOnError 02_types",
+        "tsc03": "./node_modules/.bin/tsc --noImplicitAny 03_any",
+        "tsc04": "./node_modules/.bin/tsc --noEmitOnError 04_union",
+        "tsc05": "./node_modules/.bin/tsc --noEmitOnError 05_alias",
+        "tsc06": "./node_modules/.bin/tsc --noEmitOnError 06_interface",
+        "tsc07": "./node_modules/.bin/tsc --noEmitOnError 07_class",
+        "tsc08": "./node_modules/.bin/tsc --noEmitOnError --target es6 08_class",
+        "tsc09": "./node_modules/.bin/tsc --experimentalDecorators 09_decorator",
+        "tsc10": "./node_modules/.bin/tsc --noEmitOnError 10_module_1 10_module_2",
+        "tsc11": "./node_modules/.bin/tsc --noEmitOnError 11_module_1 11_module_2",
+        "tsc12": "./node_modules/.bin/tsc --noEmitOnError 12_optional_default",
+        "tsc13": "./node_modules/.bin/tsc --noEmitOnError --target es6 13_array_fn",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "",
+    "license": "ISC"
+}
