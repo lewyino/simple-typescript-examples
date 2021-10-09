@@ -1,6 +1,6 @@
-class Person {
+class Person {
     public firstname: string;
-    private lname: string;
+    private lname: string;
     public age: number;
 
     constructor(opts?: {
@@ -15,7 +15,7 @@ class Person {
     }
 
     set lastname(name: string) {
-        this.lname = name;
+        this.lname = name.toUpperCase();
     }
 
     get lastname(): string {
@@ -23,8 +23,7 @@ class Person {
     }
 }
 
-let p: Person;
-p = new Person({
+let p = new Person({
     firstname: 'Mateusz',
     lastname: 'Lewandowski',
     age: 22,
@@ -33,5 +32,4 @@ console.log(p);
 // Person { firstname: 'Mateusz', lname: 'Lewandowski', age: 22 }
 
 p.lastname = 'Kowalski';
-
 console.log(p);

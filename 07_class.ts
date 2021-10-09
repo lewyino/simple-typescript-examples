@@ -1,6 +1,6 @@
-class Person {
+class Person {
     firstname: string;
-    lastname: string;
+    lastname: string;
     age: number;
 }
 
@@ -12,3 +12,4 @@ p.lastname = 'Lewandowski';
 p.age = 22;
 
 console.log(p.lastname);
+console.log(p);
