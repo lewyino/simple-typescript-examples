@@ -18,8 +18,8 @@
         "tsc11": "./node_modules/.bin/tsc --noEmitOnError 11_module_1 11_module_2 && node 11_module_2",
         "tsc12": "./node_modules/.bin/tsc --noEmitOnError 12_optional_default && node 12_optional_default",
         "tsc13": "./node_modules/.bin/tsc --noEmitOnError --target es6 13_array_fn && node 13_array_fn",
-        "tsc99": "./node_modules/.bin/tsc --noEmitOnError --target es6 99_exercise && node 99_exercise",
-        "tsc999": "./node_modules/.bin/tsc --noEmitOnError 99_exercise/*.ts && node 99_exercise/main",
+        "tsc101": "./node_modules/.bin/tsc --noEmitOnError --target es6 101_exercise && node 101_exercise",
+        "tsc102": "./node_modules/.bin/tsc --noEmitOnError 102_exercise/*.ts && node 102_exercise/main",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "author": "",
