@@ -87,5 +87,15 @@ const s = new Student({
     sex: SexEnum.MALE,
     grades: [3, 4, 5],
 });
-console.log(s);
 console.log(s.print());
+console.log(s);
+
+const e = new Employee({
+    firstname: "Mirosława",
+    lastname: "Nowak",
+    age: 44,
+    sex: SexEnum.FEMALE,
+    salary: 1000,
+});
+console.log(e.print());
+console.log(e);
