@@ -54,7 +54,7 @@ class Student extends Person implements StudentInterface {
         for (let i of this.grades) {
             sum += i;
         }
-        return sum / this.grades.length;
+        return sum / (this.grades.length || 1);
     }
 }
 
