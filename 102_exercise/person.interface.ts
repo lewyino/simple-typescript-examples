@@ -1,9 +1,9 @@
-import {SexEnum} from "./sex.enum";
+import {GenderEnum} from "./gender.enum";
 
 export interface PersonInterface {
     firstname: string;
     lastname: string;
     age: number;
-    sex: SexEnum;
+    gender: GenderEnum;
     print(): string;
 }

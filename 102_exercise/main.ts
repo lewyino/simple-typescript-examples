@@ -1,5 +1,5 @@
 import {Person} from "./person.model";
-import {SexEnum} from "./sex.enum";
+import {GenderEnum} from "./gender.enum";
 import {Student} from "./student.model";
 import {Employee} from "./employee.model";
 import {PersonInterface} from "./person.interface";
@@ -8,41 +8,41 @@ const p = new Person({
     firstname: 'Mateusz',
     lastname: 'Lewandowski',
     age: 18,
-    sex: SexEnum.MALE
+    gender: GenderEnum.MALE
 });
 const p2 = new Person({
     firstname: 'Maria',
     lastname: 'Kowalska',
     age: 18,
-    sex: SexEnum.FEMALE
+    gender: GenderEnum.FEMALE
 });
 
 const s = new Student({
     firstname: 'Mateusz',
     lastname: 'Lewandowski',
     age: 18,
-    sex: SexEnum.MALE,
+    gender: GenderEnum.MALE,
     grades: [2, 3, 4, 5, 5]
 });
 const s2 = new Student({
     firstname: 'Kasia',
     lastname: 'Dowbor',
     age: 55,
-    sex: SexEnum.FEMALE,
+    gender: GenderEnum.FEMALE,
     grades: [2, 3, 5, 5, 2, 4]
 });
 const s3 = new Student({
     firstname: 'Jan',
     lastname: 'Kowalski',
     age: 66,
-    sex: SexEnum.MALE,
+    gender: GenderEnum.MALE,
     grades: [2, 3, 4]
 });
 const s4 = new Student({
     firstname: 'Iwona',
     lastname: 'Nowak',
     age: 25,
-    sex: SexEnum.FEMALE,
+    gender: GenderEnum.FEMALE,
     grades: [4, 5, 4, 5, 5]
 });
 
@@ -50,28 +50,28 @@ const e = new Employee({
     firstname: 'Mateusz',
     lastname: 'Lewandowski',
     age: 18,
-    sex: SexEnum.MALE,
+    gender: GenderEnum.MALE,
     salary: 1000
 });
 const e2 = new Employee({
     firstname: 'Piotr',
     lastname: 'Wiśniewski',
     age: 29,
-    sex: SexEnum.MALE,
+    gender: GenderEnum.MALE,
     salary: 5000
 });
 const e3 = new Employee({
     firstname: 'Zuzanna',
     lastname: 'Dąbrowska',
     age: 22,
-    sex: SexEnum.FEMALE,
+    gender: GenderEnum.FEMALE,
     salary: 5432
 });
 
 const arr: PersonInterface[] = [p, p2, s, s2, s3, s4, e, e2, e3];
 
 function printMale(arr: PersonInterface[]) {
-    const maleArr = arr.filter((person) => person.sex === SexEnum.MALE);
+    const maleArr = arr.filter((person) => person.gender === GenderEnum.MALE);
     maleArr.forEach((person) => console.log(person.print()));
 }
 printMale(arr);
