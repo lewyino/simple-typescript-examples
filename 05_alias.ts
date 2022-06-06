@@ -5,3 +5,5 @@ console.log(x);
 
 x = true;
 console.log(x);
+
+x = 4;

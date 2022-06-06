@@ -25,4 +25,6 @@ let p2: Person = {
 }
 console.log(p2);
 console.log(p2.fullname());
+p2.lastname = "Lewandowski"
+console.log(p2.fullname())
 

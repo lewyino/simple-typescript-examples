@@ -1,4 +1,4 @@
-enum SexEnum {
+enum GenderEnum {
     MALE = 'male',
     FEMALE = 'female'
 }
@@ -7,7 +7,7 @@ interface PersonInterface {
     firstname: string;
     lastname: string;
     age: number;
-    sex: SexEnum;
+    sex: GenderEnum;
     print(): string;
 }
 
@@ -23,7 +23,7 @@ class Person implements PersonInterface {
     public firstname: string;
     public lastname: string;
     public age: number;
-    public sex: SexEnum;
+    public sex: GenderEnum;
 
     constructor(opts: Partial<PersonInterface> = {}) {
         this.firstname = opts.firstname;
@@ -75,7 +75,7 @@ const p = new Person({
     firstname: 'Mateusz',
     lastname: 'Lewandowski',
     age: 18,
-    sex: SexEnum.MALE
+    sex: GenderEnum.MALE
 });
 console.log(p.print());
 console.log(p);
@@ -84,7 +84,7 @@ const s = new Student({
     firstname: "Jan",
     lastname: "Kowalski",
     age: 22,
-    sex: SexEnum.MALE,
+    sex: GenderEnum.MALE,
     grades: [3, 4, 5],
 });
 console.log(s.print());
@@ -94,7 +94,7 @@ const e = new Employee({
     firstname: "Mirosława",
     lastname: "Nowak",
     age: 44,
-    sex: SexEnum.FEMALE,
+    sex: GenderEnum.FEMALE,
     salary: 1000,
 });
 console.log(e.print());
